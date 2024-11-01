@@ -1,0 +1,40 @@
+from setuptools import setup, find_packages
+
+setup(
+    name="google_photos_embeddings",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[
+        "google-auth-oauthlib>=1.0.0",
+        "google-auth-httplib2>=0.1.0",
+        "google-api-python-client>=2.86.0",
+        "torch>=2.0.1",
+        "torchvision>=0.15.2",
+        "transformers>=4.30.2",
+        "moviepy>=1.0.3",
+        "numpy>=1.24.3",
+        "open_clip_torch>=2.20.0",
+        "laion_clap>=1.1.0",
+        "qdrant-client==1.6.0",
+        "langchain==0.0.350",
+        "langchain-community==0.0.10",
+        "sentence-transformers==2.2.2",
+        "fastapi==0.104.1",
+        "uvicorn==0.24.0",
+        "python-dotenv==1.0.0",
+        "ollama==0.1.4",
+        "huggingface-hub==0.25.2"
+    ],
+    author="mkular",
+    author_email="",
+    description="A tool for extracting and embedding media from Google Photos using CLIP and CLAP models",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    url="https://github.com/mkular/google-photos-embeddings",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.8",
+)
