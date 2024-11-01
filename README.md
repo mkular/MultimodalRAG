@@ -1,7 +1,7 @@
 # MultimodalRAG
 Multimodal Rag on Google Photos (Image, Video and Audio)
 
-## Project Description
+## Description
 This program performs multimodal rag over the images, videos and extracted audio (from videos) obtained from Google Photos Album. 
 Qdrant is used for storing embeddings and their correponding payload/metadate.
 Streamlit is used to obtain user query and display all results.
